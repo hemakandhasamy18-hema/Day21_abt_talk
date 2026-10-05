@@ -1,0 +1,176 @@
+# 🔥 Day 21 - WSprint Challenge
+
+## 📌 Phase
+
+**Sprint Challenge**
+
+## 🎯 Challenge Overview
+
+Welcome to the **Week 3 Finale**.
+
+This challenge contains **2 coding puzzles** under one strict constraint:
+
+> ❌ No built-in helper functions allowed.
+
+The goal is to solve problems manually and strengthen fundamental algorithmic thinking.
+
+## 🚫 Restrictions
+
+The following built-in functions were not used:
+
+```text
+sort()
+sum()
+max()
+min()
+```
+
+## 1️⃣ Recursion — Factorial
+
+Calculate the factorial of a number using **recursion**.
+
+### Example
+
+```text
+Input:
+5
+
+Output:
+120
+```
+
+## 🧠 Approach
+
+The function repeatedly calls itself with a smaller number until it reaches the base case.
+
+```text
+factorial(5)
+
+5 × factorial(4)
+      ↓
+5 × 4 × factorial(3)
+          ↓
+5 × 4 × 3 × factorial(2)
+              ↓
+5 × 4 × 3 × 2 × factorial(1)
+                  ↓
+120
+```
+
+## ⏱️ Complexity
+
+**Time Complexity:** `O(n)`
+
+**Space Complexity:** `O(n)`
+
+---
+
+# 2️⃣ Stack — Balanced Parentheses
+
+Check whether the given brackets are properly balanced using a **Stack**.
+
+### Supported Brackets
+
+```text
+()
+[]
+{}
+```
+
+### 🧪 Test Cases
+
+| Expression | Result       |
+| ---------- | ------------ |
+| `{[()]}`   | Balanced     |
+| `{[(])}`   | Not Balanced |
+| `()`       | Balanced     |
+| `([{}])`   | Balanced     |
+
+## 🧠 Approach
+
+A **Stack** follows the **LIFO (Last In, First Out)** principle.
+
+* 🔢 Opening bracket → PUSH into stack
+* 🔍 Closing bracket → Check top element
+* ❌ Wrong match → Not Balanced
+* 📭 Empty stack at the end → Balanced
+
+### Stack Flow
+
+```text
+Expression: {[()]}
+
+{ → [{]
+[ → [{, []
+( → [{, [, (]
+) → [{, []        POP
+] → [{]           POP
+} → []            POP
+```
+
+Final result:
+
+```text
+Balanced
+```
+
+## ⏱️ Complexity
+
+**Time Complexity:** `O(n)`
+
+Each character is processed once.
+
+**Space Complexity:** `O(n)`
+
+The stack stores the opening brackets.
+
+## 💻 Technologies
+
+* 🐍 Python
+* 🔄 Recursion
+* 📚 Stack
+* 🧠 Data Structures
+* ⚡ Algorithmic Problem Solving
+
+## 🧪 Sample Output
+
+```text
+===== WEEK 3 SPRINT CHALLENGE =====
+
+Enter a number for factorial: 5
+Factorial of 5 = 120
+
+Enter brackets to check: {[()]}
+Result: Balanced
+```
+
+## 🌍 Real-World Applications
+
+### 🔄 Recursion
+
+* 🌳 Tree Traversal
+* 🔍 Searching
+* 📁 File System Processing
+* 🧩 Backtracking
+* 🧮 Mathematical Problems
+
+### 📚 Stack
+
+* 💻 Compilers
+* 🧮 Expression Evaluation
+* 🌐 Browser History
+* ↩️ Undo / Redo Systems
+* 🔍 Syntax Checking
+* ⚙️ Function Calls
+
+## 🏆 Key Learning
+
+Through this challenge, I learned:
+
+* 🔄 Recursion and base cases
+* 📚 Stack and LIFO concepts
+* ⬆️ PUSH and POP operations
+* 🧠 Manual algorithm implementation
+* ⚡ Time and space complexity
+* 🚫 Solving problems without built-in shortcuts
+
